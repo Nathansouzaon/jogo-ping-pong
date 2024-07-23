@@ -91,7 +91,7 @@ const iniciarGame = () => {
     
 
 
-        if(highScoreVerde === 100){
+        if(score === 100){
             fimDejogo.innerHTML = `Fim De Jogo Jogador Verde Venceu jogo Reniciando....`
             fimDejogo.style.color = "green";
             fimDejogo.style.fontSize = "30px";
@@ -105,7 +105,7 @@ const iniciarGame = () => {
             setTimeout(() => {
                 window.location.reload(true)
             }, 400);
-        }else if(highScoreAzul === 100) {
+        }else if(score === 100) {
             fimDejogo.innerHTML = `Fim De Jogo Jogador Azul Venceu jogo Reniciando....`
             fimDejogo.style.color = "blue";
             fimDejogo.style.fontSize = "30px";
@@ -121,12 +121,12 @@ const iniciarGame = () => {
             }, 400);
         }
         if(score === 20 || score === 40 || score ===  60 || score ===  80 || score ===  100){
-            bolaDoPong.x += bolaDoPong.vx + 1.5;
-            bolaDoPong.y += bolaDoPong.vy + 1.5;
+            bolaDoPong.x += bolaDoPong.vx + 3.0;
+            bolaDoPong.y += bolaDoPong.vy + 3.0;
           
         }else if(scoreAzul === 20 || scoreAzul === 40 || scoreAzul ===  60 || scoreAzul ===  80 || scoreAzul ===  100){
-            bolaDoPong.x += bolaDoPong.vx + 1.5;
-            bolaDoPong.y += bolaDoPong.vy + 1.5;
+            bolaDoPong.x += bolaDoPong.vx + 3.0;
+            bolaDoPong.y += bolaDoPong.vy + 3.0;
         }
       
 
